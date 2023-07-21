@@ -1,0 +1,11 @@
+services:
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    container_name: postgres_dashboard
+    environment:
+      - POSTGRES_DB=dashboard
+      - POSTGRES_PASSWORD=dashboard
+      - POSTGRES_USER=dashboard
