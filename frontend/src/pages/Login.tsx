@@ -9,6 +9,8 @@ const Login = () => {
       <div
         css={css`
           display: flex;
+          align-items: center;
+          justify-content: center;
         `}
       >
         <VFlow vSpacing={0.5}>

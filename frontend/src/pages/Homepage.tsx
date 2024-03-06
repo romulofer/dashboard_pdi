@@ -1,13 +1,13 @@
-import { Text } from "bold-ui";
+import { Text, VFlow } from "bold-ui";
 import { Link } from "react-router-dom";
 import React from "react";
 
 const Homepage = () => {
   return (
-    <div>
+    <VFlow>
       <Text>Bem-vindos ao dashboard!</Text>
       <Link to="/login">Login</Link>
-    </div>
+    </VFlow>
   );
 };
 
