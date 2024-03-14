@@ -1,13 +1,15 @@
-import React from "react";
+import Homepage from "./pages/Homepage";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import React from "react";
 
 function App() {
   return (
     <Router>
-      <h1>Boas-vindas ao Dashboard!</h1>
-      <Link to="login">Login</Link>
-      <Route path="/login" Component={Login} />
+      <Routes>
+        <Route path="/" Component={Homepage}></Route>
+        <Route path="/login" Component={Login}></Route>
+      </Routes>
     </Router>
   );
 }
