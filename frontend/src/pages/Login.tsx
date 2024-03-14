@@ -1,24 +1,22 @@
 import { css } from "@emotion/core";
 
-import { VFlow, TextInput, Button } from "bold-ui";
+import { Button, Cell, Grid, TextInput } from "bold-ui";
 import React from "react";
 
 const Login = () => {
   return (
     <React.Fragment>
-      <div
-        css={css`
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        `}
-      >
-        <VFlow vSpacing={0.5}>
+      <Grid direction="column">
+        <Cell>
           <TextInput placeholder="Username" />
+        </Cell>
+        <Cell>
           <TextInput placeholder="Password" type="password" />
+        </Cell>
+        <Cell>
           <Button kind="primary">Login</Button>
-        </VFlow>
-      </div>
+        </Cell>
+      </Grid>
     </React.Fragment>
   );
 };
