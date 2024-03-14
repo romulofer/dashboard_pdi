@@ -4,7 +4,7 @@
 
 ### Frontend
 
-- Remix 1.19.0
+- React 18.2.0
 - Yarn
 
 ### Backend
