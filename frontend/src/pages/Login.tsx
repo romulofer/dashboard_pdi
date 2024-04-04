@@ -5,21 +5,24 @@ import React from "react";
 
 const Login = () => {
   return (
-    <React.Fragment>
-      <div>
-        <Grid direction="column">
-          <Cell>
-            <TextInput placeholder="Username" />
-          </Cell>
-          <Cell>
-            <TextInput placeholder="Password" type="password" />
-          </Cell>
-          <Cell>
-            <Button kind="primary">Login</Button>
-          </Cell>
-        </Grid>
-      </div>
-    </React.Fragment>
+    <Grid
+      direction="column"
+      alignItems="center"
+      justifyContent="center"
+      style={css`
+        height: 100%;
+      `}
+    >
+      <Cell>
+        <TextInput placeholder="Username" />
+      </Cell>
+      <Cell>
+        <TextInput placeholder="Password" type="password" />
+      </Cell>
+      <Cell>
+        <Button kind="primary">Login</Button>
+      </Cell>
+    </Grid>
   );
 };
 
